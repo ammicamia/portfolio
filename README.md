@@ -2,7 +2,7 @@
 
 My personal portfolio website, designed and built from scratch.
 
-🔗 [yourname.vercel.app](https://yourname.vercel.app)
+🔗 [ammi-camia.vercel.app](https://ammi-camia.vercel.app)
 
 ## Built With
 - Next.js
