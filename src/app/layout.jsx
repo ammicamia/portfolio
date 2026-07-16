@@ -1,6 +1,14 @@
 import "./global.css"
 import { Darumadrop_One, Lexend } from 'next/font/google'
 
+export const metadata = {
+  title: "Ammi Camia",
+  description: "Personal portfolio",
+  icons: {
+    icon: "/icon.png",
+  }
+}
+
 const darumadropOne = Darumadrop_One({
   subsets: ["latin"],
   weight: ["400"],
