@@ -1,0 +1,38 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+.tab {
+    font-size: 1.25rem;
+    flex: 1;
+    font-family: var(--font-darumadrop-one);
+    text-align: right;
+    padding: 2px 20px;
+    text-decoration: none;
+    border-radius: 14px 14px 0 0;
+    cursor: pointer;
+}
+
+.tab[aria-current="page"] {
+    z-index: 2;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        width: 10%;
+        height: 100%;
+        order: 2;
+    }
+
+    .tab {
+        flex: 1;
+        text-align: center;
+        border-radius: 0 14px 14px 0;
+        writing-mode: vertical-lr;
+        padding: 20px 2px;
+    }
+}

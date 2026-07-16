@@ -1,0 +1,38 @@
+.about {
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 20px 3px;
+  position: relative;
+  width: 100%;
+  height: 90%;
+  background-color: #8FAF7E;
+  border-radius: 0 0 14px 14px;
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+.sticker {
+  position: absolute;
+  bottom: 40px;
+  right: 50px;
+}
+
+.logos img {
+  width: 100px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex: 1;
+    height: 100%;
+    border-radius: 14px 0 0 14px;
+    order: 1;
+  }
+
+  .sticker {
+    bottom: -90px;
+  }
+
+  .logos img {
+    width: 30%;
+  }
+}

@@ -1,0 +1,34 @@
+.projects {
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 20px 3px;
+  position: relative;
+  width: 100%;
+  height: 90%;
+  background-color: #7E9BAF;
+  border-radius: 0 0 14px 14px;
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+.receipts {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+    .receipts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects {
+      flex: 1;
+      height: 100%;
+      border-radius: 14px 0 0 14px;
+      order: 1;
+    }
+}

@@ -1,0 +1,157 @@
+.contact {
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 20px 3px;
+  position: relative;
+  width: 100%;
+  height: 90%;
+  background-color: #AF7E8F;
+  border-radius: 0 0 14px 14px;
+  z-index: 1;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.postcard {
+    width: 90%;
+    height: 80%;
+    background-color: #F8F3DD;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.stamps {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    gap: 10px;
+}
+
+.stamps img {
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formContent {
+    width: 100%;
+    flex: 1;
+    display: flex;
+}
+
+.address, .message {
+    flex: 1;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+.address label {
+    font-family: var(--font-darumadrop-one);
+    font-size: 1.25rem;
+    margin: 10px;
+}
+
+.address input {
+    margin-left: 2px;
+    width: 80%;
+    height: 24px;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 0.5px solid black;
+    background: none;
+}
+
+.form button {
+    display: block;
+    margin: 10px auto;
+    font-size: 1.25rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #AF7E8F;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 20px 3px;
+}
+
+.form button:hover {
+    cursor: pointer;
+}
+
+.message textarea{
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    border-left: 0.5px solid black;
+    padding: 5px;
+}
+
+.dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .contact {
+        flex: 1;
+        height: 100%;
+        border-radius: 14px 0 0 14px;
+        order: 1;
+    }
+
+    .postcard {
+        width: 95%;
+    }
+
+    .title {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .title h1 {
+        font-size: 2rem;
+    }
+
+    .formContent {
+        flex-direction: column;
+    }
+
+    .address label {
+        font-size: 1.5rem;
+    }
+    
+    .address input {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .message textarea {
+        border: none;
+    }
+
+    .stamps {
+        width: 150px;
+    }
+}

@@ -1,0 +1,72 @@
+.receipt {
+    width: 300px;
+    position: relative;
+    background-color: white;
+}
+
+.receipt::before {
+    content: "";
+    display: block;
+    height: 10px;
+    background: linear-gradient(135deg, #7E9BAF 33.33%, transparent 0),
+    linear-gradient(225deg, #7E9BAF 33.33%, transparent 0);
+    background-size: 20px 10px;
+    
+}
+
+.receipt::after {
+    content: "";
+    display: block;
+    height: 10px;
+    background: 
+    linear-gradient(315deg, #7E9BAF 33.33%, transparent 0),
+    linear-gradient(45deg, #7E9BAF 33.33%, transparent 0);
+    background-size: 20px 10px;
+}
+
+.content {
+    padding: 25px 15px;
+    height: fit-content;
+}
+
+.content hr {
+    border: none;
+    border-top: 1px dashed #000;
+    width: 100%;
+}
+
+.header {
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header p:first-child {
+    width: 70%;
+}
+
+.header p:last-child {
+    width: 30%;
+    text-align: right;
+}
+
+.stack, .links {
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.description {
+    margin: 5px 0;
+    padding: 10px 5px;
+}
+
+@media (max-width: 768px) {
+    .receipt {
+        width: 250px;
+    }
+}

@@ -1,0 +1,116 @@
+.home {
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 20px 3px;
+    position: relative;
+    width: 100%;
+    height: 90%;
+    background-color: #F1D592;
+    border-radius: 0 0 14px 14px;
+    z-index: 1;
+    overflow-y: scroll;
+}
+
+.mainContent {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.photo {
+    width: fit-content;
+    background-color: white;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 20px 3px;
+}
+
+.photo img {
+    width: 200px;
+}
+
+.caption {
+    font-size: 0.75rem;
+}
+
+.pawSticker {
+    transform: rotate(-15deg);
+    top: 230px;
+    right: 220px;
+}
+
+.knitSticker {
+    top: 150px;
+    left: 100px;
+}
+
+.cakeSticker {
+    transform: rotate(5deg);
+    top: 220px;
+    left: 200px;
+}
+
+.hint {
+    font-size: 0.75rem;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex: 1;
+        height: 100%;
+        border-radius: 14px 0 0 14px;
+        order: 1;
+    }
+
+    .mainContent {
+        flex-direction: column;
+    }
+
+    .pawSticker {
+        top: unset;
+        right: unset; 
+        bottom: 150px;
+        left: 20px;
+    }
+
+    .knitSticker {
+        top: 110px;
+        left: 0;
+    }
+
+    .cakeSticker {
+        top: 280px;
+    }
+}
+
+@media (min-width: 769px) {
+  .pawSticker {
+    top: 230px;
+    right: 220px;
+    bottom: unset;
+    left: unset;
+  }
+
+  .knitSticker {
+    top: 150px;
+    left: 100px;
+    bottom: unset;
+    right: unset;
+  }
+
+  .cakeSticker {
+    top: 220px;
+    left: 200px;
+    bottom: unset;
+    right: unset;
+  }
+}

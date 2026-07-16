@@ -1,0 +1,19 @@
+.bear {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    width: 200px;
+}
+
+.body {
+    width: 100%;
+    display: block;
+}
+
+.eyes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
