@@ -4,7 +4,7 @@
   position: relative;
   width: 100%;
   height: 90%;
-  background-color: #AF7E8F;
+  background-color: var(--color-folder-contact);
   border-radius: 0 0 14px 14px;
   z-index: 1;
   overflow-y: scroll;
@@ -16,7 +16,7 @@
 .postcard {
     width: 90%;
     height: 80%;
-    background-color: #F8F3DD;
+    background-color: light-dark(#F8F3DD, #F8F3DD);
     display: flex;
     flex-direction: column;
     border-radius: 6px;
@@ -28,6 +28,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    padding: 20px;
 }
 
 .stamps {
@@ -45,7 +46,7 @@
 .form {
     width: 100%;
     flex: 1;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -79,16 +80,17 @@
     border: none;
     border-bottom: 0.5px solid black;
     background: none;
+    color: var(--color-text);
 }
 
 .form button {
     display: block;
     margin: 10px auto;
     font-size: 1.25rem;
-    padding: 5px 10px;
-    border-radius: 4px;
+    padding: 10px 15px;
+    border-radius: 14px;
     border: none;
-    background-color: #AF7E8F;
+    background-color: black;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 20px 3px;
 }
 
@@ -103,7 +105,8 @@
     border: none;
     background: none;
     border-left: 0.5px solid black;
-    padding: 5px;
+    padding: 10px;
+    color: var(--color-text);
 }
 
 .dialog {
@@ -113,7 +116,8 @@
     transform: translate(-50%, -50%);
     margin: 0;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 600px) {
     .contact {
         flex: 1;
         height: 100%;
@@ -126,20 +130,28 @@
     }
 
     .title {
-        margin-top: 20px;
         flex-direction: column;
     }
 
     .title h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+    }
+
+    .form {
+        padding: 5px 15px;
     }
 
     .formContent {
         flex-direction: column;
     }
 
+    .message {
+        flex: 1;
+    }
+
     .address label {
         font-size: 1.5rem;
+        margin: 5px;
     }
     
     .address input {

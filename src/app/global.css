@@ -1,8 +1,18 @@
+:root {
+  color-scheme: light dark;
+  --color-folder-home: light-dark(#F1D592, #F1D592);
+  --color-folder-about: light-dark(#8FAF7E, #8FAF7E);
+  --color-folder-projects: light-dark(#7E9BAF, #7E9BAF);
+  --color-folder-contact: light-dark(#AF7E8F, #AF7E8F);
+  --color-folder-body: light-dark(white, white);
+  --color-photo-bg: light-dark(white, white);
+  --color-text: light-dark(black, black);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* outline: 1px solid red; */
 }
 
 html {
@@ -11,10 +21,12 @@ html {
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--color-page-bg);
+  color: var(--color-text);
 }
 
 a {
@@ -43,24 +55,28 @@ textarea {
 .folder {
   width: 90%;
   max-width: 1000px;
-  height: 600px;
-  max-height: 80vh;
+  height: 80dvh;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   :root {
     font-size: 18px;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 1024px) {
+  .folder {
+    height: 85dvh;
+  }
+}
+
+@media (max-width: 600px) {
   .folder {
     flex-direction: row;
-    height: 700px;
-    max-height: 90vh;
+    height: 90dvh;
   }
 
   h1 {

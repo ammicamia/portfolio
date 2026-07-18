@@ -24,6 +24,9 @@ const lexend = Lexend({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${darumadropOne.variable} ${lexend.variable}`}>
+      <head>
+        <meta name="color-scheme" content="light" />
+      </head>
       <body>{children}</body>
     </html>
   )

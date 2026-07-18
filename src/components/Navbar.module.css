@@ -20,7 +20,7 @@
     position: relative;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .nav {
         flex-direction: column;
         width: 10%;
